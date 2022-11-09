@@ -62,13 +62,50 @@
       </ul>
     </div>
   </nav>
-  <header class="header__pedido">
+  <header class="header__pedido header-pc">
     <div class='containers'>
       <h1>Pedidos</h1>
     </div>
   </header>
   <div class='navFondo'></div>
   <main>
+    <form>
+      <fieldset>
+      <legend>Hace tu pedido</legend>
+      <label for="nombreApellido" class="form-label">Nombre y Apellido:</label> 
+    <input type="text" class="form-control" id="nombreApellido" placeholder="Nombre..."> <br>
+      <div class="row">
+  <div class="col-md-auto">
+       <label for="envio" class="form-label">Retiro o Envio</label>
+    <select class="form-select" id="envio">
+      <option value="retiro">Retiro</option>
+      <option value="envio">Envio</option>
+    </select>
+  </div>
+    <div class="col">
+ <label for="direccion" class="form-label">Dirección:</label> 
+    <input type="text" class="form-control" id="nombreApellido" placeholder="En caso de elegir ENVIO."> <br>
+    </div>
+  </div>
+    <h6>Mi Pedido:</h6>
+        <label for="carne">Empanadas de carne:</label>
+        <input type="number" id="carne" name="carne" placeholder="0"><br>
+        <label for="charqui">Empanadas de charqui:</label>
+        <input type="number" id="charqui" name="charqui" placeholder="0"><br>
+        <label for="pollo">Empanadas de pollo:</label>
+        <input type="number" id="pollo" name="pollo" placeholder="0"><br>
+        <label for="queso">Empanadas de queso:</label>
+        <input type="number" id="queso" name="queso" placeholder="0"><br>
+        <label for="arabes">Empanadas arabes:</label>
+        <input type="number" id="arabes" name="arabes" placeholder="0"><br>
+  </div> 
+    </div>
+  </div> <br>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </div>
+      </fieldset>
+</form>
   </main>
   <footer>
   <p>©2022</p>

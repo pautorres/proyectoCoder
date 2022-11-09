@@ -2,9 +2,13 @@
 
 body {
 	background: #F1F1EB;
-	margin: 0;
 	font-family: "Montserrat", sans-serif;
-	font-size: 16px;
+	
+}
+
+
+header{
+	font-size: 0.8rem;
 }
 
 nav {
@@ -20,26 +24,23 @@ nav {
 	z-index: 5;
 }
 
-.nav-item {
-	font-size: 20px;
-}
 
-.containers li {
+.containers li, .mapa, .icon {
 display: none;
 }
 
 .containers h1 {
 	color: white;
 	margin-left: 3%;
-	padding-bottom: 17%;
-	font-weight: 700;
+	padding-bottom: 12%;
+	font-weight: 600;
 	text-shadow: #212020 1px 0 10px;
 }
 
 .navFondo {
 	background: #bc4b51;
 	position: fixed;
-	height: 5em;
+	height: 4em;
 	width: 100%;
 	top: 0;
 	z-index: 2;
@@ -51,10 +52,10 @@ display: none;
 
 .header {
 	width: 100%;
-	min-height: 300px;
 }
 
 .header__inicio {
+	height: 520px;
 	 background-position: center; 
   background-size: cover; 
 	position: relative;
@@ -65,8 +66,8 @@ display: none;
 }
 
 .header__precios {
-	
-	padding: 10em 0 8em;
+	height: 520px;
+	padding: 14em 0 8em;
 	
 	 background-position: center; 
   background-size: cover; 
@@ -77,7 +78,7 @@ display: none;
 }
 
 .header__contacto {
-	
+	height: 520px;
 	padding: 15em 0 8em;
 	
 	 background-position: center; 
@@ -89,7 +90,7 @@ display: none;
 }
 
 .header__pedido {
-	
+	height: 520px;
 	 background-position: center; 
   background-size: cover; 
 	padding: 15em 0 8em;
@@ -100,7 +101,7 @@ display: none;
 }
 
 .header__nosotros {
-	
+	height: 520px;
 	 background-position: center; 
   background-size: cover; 
 	padding: 15em 0 8em;
@@ -110,9 +111,6 @@ display: none;
 	background-image: url(../Fotos/5.jpg);
 }
 
-.mapa{
-	display: none;
-}
 
 .letterpress {
   text-shadow: 1px 2px 3px #DDEEFF,
@@ -175,12 +173,12 @@ display: none;
 .front {
   background: #EEEEE8;
    text-align: center;
-   height: 230px;
+   min-height: 230px;
 
 }
 .back {
   background-color: #212020;
-  height: 230px;
+  min-height: 230px;
 
 }
 
@@ -232,9 +230,6 @@ display: none;
 }
 
 
-.icon {
-  display: none;
-}
 
 footer {
 	bottom: 0;
@@ -243,10 +238,11 @@ footer {
 	width: 100%;
 	min-height: 210px;
 	background-color: #31393c;
-	margin-top: 50px;
+	margin-top: 5%;
 	align-items: center;
 	justify-content: center;
 	bottom: 0;
+	padding-top: 30px;
 }
 
 footer p {
@@ -254,9 +250,44 @@ footer p {
 	display: inline-block;
 	width: 45%;
 	text-align: center;
+	justify-content: center;
 }
 
-@media  screen and (min-width: 800px ) {
+form {
+	padding: 4%;
+}
+
+label {
+	font-size: 0.8rem;
+}
+
+
+@media  screen and (min-width: 768px ) {
+ legend {
+	font-weight: 600;
+ }
+	.containers h1 {
+	color: white;
+	margin-left: 0;
+	font-weight: 100;
+	text-shadow: none;
+	    font-size: 3.2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header-pc {
+	background-position: auto; 
+  background-size:auto; 
+	margin: auto;
+	position: relative;
+	background-color: #7c562b;
+	z-index: 4;
+}
+
+}
+
+@media  screen and (min-width: 992px ) {
 
 	.navbar {
 display: none;
@@ -265,11 +296,14 @@ display: none;
 .header-pc {
 	background-position: auto; 
   background-size:auto; 
-	padding: 13em 0 8em;
+	padding: 10em 0 8em;
 	position: relative;
 	background-color: #7c562b;
 	z-index: 4;
 }
+.containers h1 {
+	  font-size: 4em;
+	padding-bottom: 10%;}
 
 .mapa {
 	width: 95%;
@@ -279,26 +313,16 @@ border: 9px solid white;
 transform: translate(0, -15%);
 }
 .letterpress {
+	font-size: 1.9rem;
 	z-index: 1;
 	position: relative;
 	
 }
 
-	.containers h1 {
-	color: white;
-	margin-left: 0;
-	padding-bottom: 10%;
-	font-weight: 100;
-	text-shadow: none;
-	    font-size: 4em;
-    text-transform: uppercase;
-    text-align: center;
-}
-
 .containers li {
 display: inline-block;
 
-	padding: 1.9em;
+	padding: 1.33em;
 	text-align: center;
 	transition: all 0.2s;
 }
@@ -317,10 +341,6 @@ display: inline-block;
     height: 18rem;
 }
 
-.icono {
-	width: 10px;
-	display: inline-block;
-}
 img {
 	width: 100%;
 	height: 100%;
@@ -366,7 +386,7 @@ nav a:hover {
 }
 
 .icon {
-	padding-top: 10px;
+	padding-top: 5px;
 	width: 7.8%;
 	display: inline-block;
 }
@@ -386,7 +406,7 @@ nav a:hover {
 .navFondo {
 	background: #bc4b51;
 	position: fixed;
-	height: 5em;
+	height: 4em;
 	width: 100%;
 	top: 0;
 	z-index: 3;
@@ -396,7 +416,7 @@ nav a:hover {
     .cards {
 display: grid;
 grid-template-columns: 65% 35%;
-grid-template-rows: 45% 55%;
+grid-template-rows: 45% 65%;
 }
 
 .div1 { grid-area: 1 / 2 / 2 / 3; }
@@ -406,35 +426,55 @@ grid-template-rows: 45% 55%;
 
 .flip {
   margin:2%;
-  height: 350px;
-  width: 44%;
-  max-height: 600px;
+  height: 40%;
+  width: 45%;
   display: flex;
   display: inline-block;
     border-radius: 4px;
     box-shadow: rgb(14 21 47 / 20%) 0px 8px 20px;
 }
 .front{
-  height: 350px;
+	width: 45%;
+	height: 40%;
   text-align: center;
   align-content: center;
   justify-items: center;
 }
+
+.back {
+	width: 45%;
+	height: 40%;
+	
+	
+}
 .text-shadow {
   font-weight: 500;
   line-height:290px;
-  font-size: 31px;
+  font-size: 1.2rem;
 }
 
-.back h2 {
-font-size: 35px;
-  padding-top:40px;
+.back {
   text-align: center;
   justify-content: center;
-
+}
+  .back h2 {
+	padding-top: 10%;
+font-size: 1.7rem;
+}
+footer {
+	padding: 0;
 }
 
 footer p {
 	width: 33%;
+	
 }
-} 
+}
+
+
+
+@media screen and (min-width: 1200px) {
+	.text-shadow {
+  font-size: 1.7rem;
+}
+}
